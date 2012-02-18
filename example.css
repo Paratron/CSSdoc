@@ -1,0 +1,65 @@
+/**
+	Basic styles
+	This basic styles are applied all over the page.
+	Notice: No package definition here! This means, it all goes to a global/default package.
+*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #ababab;
+}
+
+h1{
+	font-size: 2em;
+	color: #333;
+	margin: 0 0 1em 0;
+}
+
+h2{
+	font-size: 1.5em;
+	color: #444;
+	margin: 0 0 1em 0;
+}
+
+p{
+	padding: 5px;
+}
+
+a{
+	color: #508fdd; /* A nicer blue here */
+}
+
+/*!
+	Content stylings
+	The content styling are applied to all elements in the content area of the page.
+	@package: content
+*/
+
+/**
+	Introducional area
+	This area is used right underneath the page head menu.
+	It increases the color contrast and font size of the child elements (h1, p).
+	The intro area is a bit darker than the rest of the page to make it pop out.
+
+	@package: content
+*/
+.intro{
+	font-size: 1.5em;
+	background: #fefefe;
+	padding: 3px;
+}
+
+.intro h1{
+	color: #000;
+}
+
+.intro p{
+	color: #333;
+}
+/*demo
+	<div class="intro">
+		<h1>I am an intro headline</h1>
+		<p>And I am the welcome text! I am beautiful!</p>
+	</div>
+*/
