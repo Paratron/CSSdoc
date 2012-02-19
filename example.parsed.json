@@ -1,75 +1,104 @@
 {
-	"global":{
-		"title": "Global Stylings",
-		"description": "This stylings aren't assigned to any module.",
-		"elements":[
-			{
-				"title": "Basic styles",
-				"description": "This basic styles are applied all over the page.
+	"title": "My example Project",
+	"description": "This project is just an example and is used for demoing the CSSdoc system.",
+	"version": 1,
+	"author": [
+		{
+			"name": "Christian Engel",
+			"url": "http://twitter.com/paratron"
+		},
+		{
+			"name": "Justin Marsan",
+			"url": "http://github.com/justinmarsan"
+		}
+	],
+	"packages": {
+		"default":{
+			"title": "Default Stylings",
+			"description": "This stylings aren't assigned to any module.",
+			"elements":[
+				{
+					"title": "Basic styles",
+					"description": "This basic styles are applied all over the page.
 Notice: No package definition here! This means, it all goes to a global/default package.",
-				"classes": [
-					{
-						"selector": "body",
-						"content": "font-family: Arial, Helvetica, sans-serif;font-size: 12px;line-height: 1.5em;color: #ababab;",
-						"notes": []
-					},
-					{
-						"selector": "h1",
-						"content": "font-size: 2em;color: #333;margin: 0 0 1em 0;",
-						"notes": []
-					},
-					{
-						"selector": "h2",
-						"content": "font-size: 1.5em;color: #444;margin: 0 0 1em 0;",
-						"notes": []
-					},
-					{
-						"selector": "p",
-						"content": "padding: 5px;",
-						"notes": []
-					},
-					{
-						"selector": "a",
-						"content": "color: #508fdd;",
-						"notes": [
-							"A nicer blue here"
-						]
-					}
-				],
-				"demos": []
-			}
-		]
-	},
-	"content": {
-		"title": "Content stylings",
-		"description": "The content styling are applied to all elements in the content area of the page.",
-		"elements": [
-			{
-				"title": "Introductional area",
-				"description": "This area is used right underneath the page head menu.
+					"content": [
+						{
+							"type": "css",
+							"selector": "body",
+							"content": "font-family: Arial, Helvetica, sans-serif;font-size: 12px;line-height: 1.5em;color: #ababab;",
+							"notes": []
+						},
+						{
+							"type": "css",
+							"selector": "h1",
+							"content": "font-size: 2em;color: #333;margin: 0 0 1em 0;",
+							"notes": []
+						},
+						{
+							"type": "css",
+							"selector": "h2",
+							"content": "font-size: 1.5em;color: #444;margin: 0 0 1em 0;",
+							"notes": []
+						},
+						{
+							"type": "css",
+							"selector": "p",
+							"content": "padding: 5px;",
+							"notes": []
+						},
+						{
+							"type": "css",
+							"selector": "a",
+							"content": "color: #508fdd;",
+							"notes": [
+								"A nicer blue here"
+							]
+						}
+					]
+				}
+			]
+		},
+		"content": {
+			"title": "Content stylings",
+			"description": "The content styling are applied to all elements in the content area of the page.",
+			"elements": [
+				{
+					"title": "Introductional area",
+					"description": "This area is used right underneath the page head menu.
 It increases the color contrast and font size of the child elements (h1, p).
 The intro area is a bit darker than the rest of the page to make it pop out.",
-				"classes": [
-					{
-						"selector": ".intro",
-						"content": "font-size: 1.5em;background: #fefefe;padding: 3px;",
-						"notes": []
-					},
-					{
-						"selector": ".intro h1",
-						"content": "color: #000;",
-						"notes": []
-					},
-					{
-						"selector": ".intro p",
-						"content": "color: #333;",
-						"notes": []
-					}
-				],
-				"demos": [
-					"<div class=\"intro\"><h1>I am an intro headline</h1><p>And I am the welcome text! I am beautiful!</p></div>"
-				]
-			}
-		]
+					"content": [
+						{
+							"type": "css",
+							"selector": ".intro",
+							"content": "font-size: 1.5em;background: #fefefe;padding: 3px;",
+							"notes": []
+						},
+						{
+							"type": "css",
+							"selector": ".intro h1",
+							"content": "color: #000;",
+							"notes": []
+						},
+						{
+							"type": "css",
+							"selector": ".intro p",
+							"content": "color: #333;",
+							"notes": []
+						},
+						{
+							"type": "demo",
+							"source": "<div class=\"intro\"><h1>I am an intro headline</h1><p>And I am the welcome text! I am beautiful!</p></div>"
+						}
+					],
+					"todo": [
+						{
+							"line": 53,
+							"text": "Add rounded corners - looks nicer."
+						}
+					]
+				}
+			]
+		}
 	}
 }
