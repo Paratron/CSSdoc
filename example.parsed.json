@@ -49,10 +49,7 @@ Notice: No package definition here! This means, it all goes to a global/default 
 						{
 							"type": "css",
 							"selector": "a",
-							"content": "color: #508fdd;",
-							"notes": [
-								"A nicer blue here"
-							]
+							"content": "/*A nicer blue here*/color: #508fdd;",
 						}
 					]
 				}

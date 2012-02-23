@@ -8,13 +8,13 @@ CSSdoc Comments use the standard CSS block comments, but apply some commands dir
         ...
     */
 
-##### Tag Types
- * **!**
+##### Block Types
+ * **!**    
     The project indicator should be used for the first comment in your stylesheet.
  * **=**    
      The equal character defines a new module.
  * **-**    
-    The minus character a new element.
+    The minus character defines a new element.
  * **demo**    
     The demo command defines a new code example.
 
@@ -93,17 +93,6 @@ Introduce them like so:
     */
 
 Code demos are assigned to the last introduced element.
-
-
-Notes
------
-Every "normal" CSS comment you assign inside a CSS rule will be attached as a note to the rule.
-For example:
-
-    .myrule{
-        /* Don't use this on white background! */
-        color: #fff;
-    }
 
 
 Additional parameters
